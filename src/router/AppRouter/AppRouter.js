@@ -1,21 +1,27 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "../../component/Navbar/Navbar";
-import Header from "../../component/Header/Header";
-import Footer from "../../component/Footer/Footer";
+
 import Homepage from "../../pages/HomePage/Homepage";
-import CommonCard from "./../../component/CommonCard/CommonCard";
-import PopularProductCard from "../../component/CommonCard/PopularProductCard";
-import AddToCartButton from "../../component/CommonButton/AddToCartButton";
-import BrandCard from "../../component/CommonCard/BrandCard";
+
 import LoginPage from "../../pages/LoginPage/LoginPage";
+import SignupPage from "./../../pages/SignUpPage/SignupPage";
+import BabyCareCategory from "./../../pages/CategoiesPage/BabyCareCategory";
+import HealthCareCategory from "./../../pages/CategoiesPage/HealthCareCategory";
+import OrganiceCategory from "./../../pages/CategoiesPage/OrganiceCategory";
+import PersonalCategory from "./../../pages/CategoiesPage/PersonalCategory";
+import LifeStyleCategory from "./../../pages/CategoiesPage/LifeStyleCategory";
 function AppRouter() {
   return (
     <Router>
       <Routes>
         <Route path="/homepage" element={<Homepage />} />
-       <Route path="/LoginPage" element= {<LoginPage />} />
-
+        <Route path="/LoginPage" element={<LoginPage />} />
+        <Route path="/SignupPage" element={<SignupPage />} />
+        <Route path="/BabyCareCategory" element={<BabyCareCategory />} />
+        <Route path="/HealthCareCategory" element={<HealthCareCategory />} />
+        <Route path="/OrganiceCategory" element={<OrganiceCategory />} />
+        <Route path="/PersonalCategory" element={<PersonalCategory />} />
+        <Route path="/LifeStyleCategory" element={<LifeStyleCategory />} />
       </Routes>
     </Router>
   );

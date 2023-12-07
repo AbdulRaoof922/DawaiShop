@@ -16,11 +16,11 @@ function Header() {
       </div>
 
       <div className="flex items-center space-x-1">
-        <Link to="/Login" className="text-sm">
+        <Link to="/LoginPage" className="text-sm">
           Sign in
         </Link>
         <span>|</span>
-        <Link to="/SignUp" className="text-sm">
+        <Link to="/SignupPage" className="text-sm">
           Sign Up
         </Link>
         <Link to="/checkout" className="relative flex items-center ml-4">
