@@ -3,6 +3,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import AddToCartButton from "./../../component/CommonButton/AddToCartButton";
+import Header from './../../component/Header/Header';
+import Footer from './../../component/Footer/Footer';
+import Navbar from './../../component/Navbar/Navbar';
 
 const BabyCareCategory = () => {
   const products = [
@@ -311,8 +314,16 @@ const BabyCareCategory = () => {
       },
   ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 ">
+    <>
+   
+    <Header />
+    <Navbar />
+    
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-4 ">
+   
+    
       {products.map((item) => ( 
+        
         <div
           key={item.id}
           className="flex flex-col  relative justify-center mx-2 border p-4 rounded-lg shadow  border-gray-200 my-6"
@@ -334,7 +345,10 @@ const BabyCareCategory = () => {
           <AddToCartButton />
         </div>
       ))}
+      
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -10,6 +10,8 @@ import HealthCareCategory from "./../../pages/CategoiesPage/HealthCareCategory";
 import OrganiceCategory from "./../../pages/CategoiesPage/OrganiceCategory";
 import PersonalCategory from "./../../pages/CategoiesPage/PersonalCategory";
 import LifeStyleCategory from "./../../pages/CategoiesPage/LifeStyleCategory";
+import MedicineCategory from "../../pages/CategoiesPage/MedicineCategory";
+import CheckOutPage from './../../pages/CheckoutPage/CheckOutPage';
 function AppRouter() {
   return (
     <Router>
@@ -22,6 +24,10 @@ function AppRouter() {
         <Route path="/OrganiceCategory" element={<OrganiceCategory />} />
         <Route path="/PersonalCategory" element={<PersonalCategory />} />
         <Route path="/LifeStyleCategory" element={<LifeStyleCategory />} />
+        <Route path="/MedicineCategory" element={<MedicineCategory />} />
+        <Route path="/CheckOutPage" element={<CheckOutPage />} />
+
+
       </Routes>
     </Router>
   );

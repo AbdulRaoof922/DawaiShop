@@ -5,6 +5,7 @@ function Footer() {
   const data = [
     {
       title: "DAWAAI",
+      id:1,
 
       links: [
         { name: "Careers", path: "/careerpage" },
@@ -16,6 +17,7 @@ function Footer() {
       ],
     },
     {
+      id:2,
       title: "POPULAR CATEGORIES",
 
       links: [
@@ -28,6 +30,7 @@ function Footer() {
       ],
     },
     {
+      id:3,
       title: "CONTACT US",
 
       links: [
@@ -44,19 +47,19 @@ function Footer() {
     <>
       <div className=" bg-[#EEEEEE] grid sm:grid-flow-col  sm:w-full h-full ">
         {data.map((item) => (
-          <div className="flex justify-center w-full sm:h-full h-full sm:py-32 ">
+          <div key={item.id} className="flex justify-center w-full sm:h-full h-full sm:py-32 ">
             <div className="w-1/2 ">
               <h1 className="text-2xl text-[#2a579b] mb-2">{item.title}</h1>
 
-              {item.links.map((link) => (
-                <Link className="w-full h-full text-md" to={link.path}>
+              {item.links.map((link ,index) => (
+                <Link key={item.index} className="w-full h-full text-md" to={link.path}>
                   <p className="text-md">{link.name}</p>
                 </Link>
               ))}
 
               <div className="flex mt-4 w-fit ">
-                {item.links.map((link) => (
-                  <Link className=" text-md" to={link.path}>
+                {item.links.map((link ,index) => (
+                  <Link key={item.index} className=" text-md" to={link.path}>
                     <div className="w-fit">{link.icon}</div>
                   </Link>
                 ))}

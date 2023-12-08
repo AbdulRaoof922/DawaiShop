@@ -3,6 +3,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import AddToCartButton from "./../../component/CommonButton/AddToCartButton";
+import Header from "../../component/Header/Header";
+import Footer from './../../component/Footer/Footer';
+import Navbar from "../../component/Navbar/Navbar";
 
 const HealthCareCategory = () => {
   const products = [
@@ -311,6 +314,9 @@ const HealthCareCategory = () => {
       },
   ];
   return (
+    <>
+    <Header/>
+    <Navbar />
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 ">
       {products.map((item) => ( 
         <div
@@ -335,6 +341,8 @@ const HealthCareCategory = () => {
         </div>
       ))}
     </div>
+    <Footer />
+    </>
   );
 };
 
