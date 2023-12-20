@@ -342,7 +342,7 @@ const BabyCareCategory = () => {
           <div className="bg-blue-300 w-fit rounded-sm absolute top-2 right-0">
             <span className="">{item.discount}</span>
           </div>
-          <AddToCartButton />
+          <AddToCartButton product={item}/>
         </div>
       ))}
       

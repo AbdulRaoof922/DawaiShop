@@ -179,7 +179,7 @@ const MedicalEquipments = () => {
               <span className="">{item.discount}</span>
 
               </div>
-              <AddToCartButton />
+              <AddToCartButton product={item}/>
             </div>
           </SwiperSlide>
         ))}

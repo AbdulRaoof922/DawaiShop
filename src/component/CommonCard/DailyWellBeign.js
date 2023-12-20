@@ -173,7 +173,7 @@ const DailyWellBeign = () => {
               <span className="">{item.discount}</span>
 
               </div>
-              <AddToCartButton />
+              <AddToCartButton product={item}/>
             </div>
           </SwiperSlide>
         ))}

@@ -14,7 +14,7 @@ function Header() {
         <input
           type="text"
           placeholder="Search Medicine..."
-          className="rounded-md p-2 sm:w-full text-black"
+          className="p-2 text-black rounded-md sm:w-full"
         />
       </div>
 
@@ -26,7 +26,7 @@ function Header() {
         <Link to="/SignupPage" className="text-sm">
           Sign Up
         </Link>
-        <Link className="relative flex items-center ml-4">
+        <Link to="/cartpage" className="relative flex items-center ml-4">
           <RiShoppingBag3Fill size={25} className="text-[#E9EDF4]" />
           <div className="absolute top-[-6px] right-[-6px] lg:top-[-10px] lg:right-[-10px] h-4 w-4 lg:h-5 lg:w-5 rounded-full bg-[#FB5F50] flex items-center justify-center">
             <p className="text-xs">{totalQuantity}</p> 

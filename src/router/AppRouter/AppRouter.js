@@ -11,7 +11,7 @@ import OrganiceCategory from "./../../pages/CategoiesPage/OrganiceCategory";
 import PersonalCategory from "./../../pages/CategoiesPage/PersonalCategory";
 import LifeStyleCategory from "./../../pages/CategoiesPage/LifeStyleCategory";
 import MedicineCategory from "../../pages/CategoiesPage/MedicineCategory";
-import CheckOutPage from './../../pages/CheckoutPage/CheckOutPage';
+import CartPage from "../../pages/CartPage/CartPage";
 function AppRouter() {
   return (
     <Router>
@@ -25,9 +25,7 @@ function AppRouter() {
         <Route path="/PersonalCategory" element={<PersonalCategory />} />
         <Route path="/LifeStyleCategory" element={<LifeStyleCategory />} />
         <Route path="/MedicineCategory" element={<MedicineCategory />} />
-        <Route path="/CheckOutPage" element={<CheckOutPage />} />
-
-
+        <Route path="/cartpage" element={<CartPage />} />
       </Routes>
     </Router>
   );

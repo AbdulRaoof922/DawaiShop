@@ -166,7 +166,7 @@ const PopularProductCard = () => {
               <p>{item.description} </p>
               <p>{item.packSize} </p>
               <p className="text-xl text-black">{item.price}</p>
-              <AddToCartButton />
+              <AddToCartButton product={item}/>
             </div>
           </SwiperSlide>
         ))}
